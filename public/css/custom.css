@@ -1,0 +1,175 @@
+
+
+.span_required{
+    color: red;
+}
+
+.styleVerify{
+    color:#0f700d;
+    padding-top: 20px;
+}
+.verify{
+    padding-bottom: 60px;
+
+}
+/**** test *******/
+.box {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+  .box label {
+    font-size: 12px;
+    color: #4D4D4D;
+    position: absolute;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+  .box input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  .box input:checked ~ .check {
+    border-color: #dc3545;
+    box-shadow: 0px 0px 0px 15px #dc3545 inset;
+  }
+  .box input:checked ~ .check::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .box .check {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    background-color: #FFF;
+    border: 2px solid #dc3545;
+    box-shadow: 0px 0px 0px 0px #dc3545 inset;
+    transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+  }
+  .box .check::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    transform: scale(0);
+    background-size: 50%;
+    background-image: url("http://s6.picofile.com/d/8392306668/c38c12a0-6db3-47d4-a80c-7dad8fab5186/checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-delay: 0.2s !important;
+    transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+  }
+
+  /************Payement********************/
+.stylepayment{
+    background-color: #040E27;
+}
+
+.styleverify{
+    margin-top: 50px;
+}
+
+/* line 37, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_bradcam.scss */
+.bradcam_area1 h3 {
+    font-size: 80px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 90px;
+    text-transform: capitalize;
+    font-family: "Nothing You Could Do", cursive;
+  }
+
+  @media (max-width: 767px) {
+    /* line 37, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_bradcam.scss */
+    .bradcam_area1 h3 {
+      font-size: 40px;
+    }
+  }
+
+
+
+/*PopUp*/
+.popup_link{
+    color: #a01b22;
+}
+.popup_link:hover{
+    color: #0f700d;
+}
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #040E27;
+  }
+  .modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+
+  .modal-close {
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    color: #0f700d;
+  }
+  .modal_title{
+      color: white;
+  }
+
+  .modal_body{
+      color: white;
+  }
+
+  .div_error{
+    color: red;
+}
+
+p.text-danger{
+    color: red;
+}
+
+
